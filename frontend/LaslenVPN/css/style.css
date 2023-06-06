@@ -6,6 +6,7 @@
     --color-text:#0B132A;
     --color-page:#F6F6F6;
     --color-shadow:rgba(245, 56, 56, 0.35);
+    --color-disable:#4F5665;
 }
 
 /* Global Config ========================================================================================= */
@@ -109,12 +110,18 @@ body{
     height:60px;
     border-radius:10px;
 }
-.button.-bgshw{
+.-bgshw.-hov:hover{
+    transform:scale(0.95);
+    cursor:pointer;
+}
+.-bgcolor{
     background:var(--color-primary);
+}
+.-bgshw{
     color:#fff;
     position:relative;
 }
-.presentation>.button.-bgshw::after{
+.-bgshw::after{
     content:"";
     position:absolute;
     box-shadow:1px 10px 10px 10px rgba(245,56,56,0.35);
@@ -124,19 +131,25 @@ body{
     width:200px;
     height:20px;
 }
-.presentation>.button.-bgshw:hover{
-    transform:scale(0.95);
-    cursor:pointer;
+.-shwcolor::after{
+    background:#fff;
+    box-shadow:1px 10px 10px 10px rgba(0,0,0,0.35);
+    top:180px;
+    width:980px;
+    z-index:-1;
 }
 
 /* ====================================== */
 /* HEADER ============================================================================================= */
 /* ====================================== */
 .header{
-    display:flex;
-    justify-content:center;
     padding-left:150px;
     padding-right:80px;
+}
+.header .textPresent{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     gap:10px;
 }
 .header .presentation{
@@ -148,19 +161,34 @@ body{
 /* ====================================== */
 strong{
     font-weight:700;
+    color:var(--color-text);
 }
 .title{
     font-size:50px;
     font-weight:500;
     line-height:70px;
+    color:var(--color-text);
 }
 .subTitle{
     font-size:16px;
     font-weight:500;
     line-height:30px;
+    color:var(--color-text);
 }
 .presentation>.subTitle.-mb30{
     margin-bottom:30px;
+}
+.counterContent>.title{
+    font-size:25px;
+    font-weight:700;
+    line-height:30px;
+    margin-bottom:5px;
+}
+.counterContent>.subTitle{
+    font-size:20px;
+    font-weight:400;
+    line-height:30px;
+    color:var(--color-disable);
 }
 
 /* ====================================== */
@@ -176,8 +204,22 @@ strong{
 }
 
 /* ====================================== */
-/* HEADER ============================================================================================= */
+/* COUNTER =========================================================================================== */
 /* ====================================== */
+.boxCount{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin:103px 0 95px;
+    padding:72px 90px;
+    background:#fff;
+    border-radius:10px;
+}
+.counter{
+    display:flex;
+    gap:35px;
+}
+
 /* ====================================== */
 /* HEADER ============================================================================================= */
 /* ====================================== */
