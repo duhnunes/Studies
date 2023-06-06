@@ -21,26 +21,74 @@ body{
 }
 
 /* HEADER ============================================================================ */
-.header{
-     padding:50px 0;
-     height:100px;
-}
 .navbar{
     display:flex;
     justify-content:space-between;
-    padding:0 150px;
+    align-items:center;
+    padding:50px 150px;
 }
-.logo>img{
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:var(--color-text);
+}
+.imgLogo{
     width:35px;
-    padding-right:10px;
 }
-.logo>h1{
+.writeLogo{
     font-size:20px;
     font-weight:500;
     line-height:24px;
 }
-/* HEADER ============================================================================ */
-/* HEADER ============================================================================ */
+/* MENU ============================================================================ */
+.menu {
+    display:flex;
+    gap:40px;
+    font-size:16px;
+    font-weight:400;
+}
+.menu>.menuItem{
+    text-decoration:none;
+    color:var(--color-text);
+    transition:color 0.25s ease-in-out;
+}
+.menu>.menuItem:hover{
+    color:var(--color-primary);
+}
+/* LOGIN ============================================================================ */
+.login{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+.login>.signIn{
+    text-decoration:none;
+    color:var(--color-text);
+    font-size:16px;
+    font-weight:600;
+    line-height:19px;
+    transition:color 0.25s ease-in-out;
+}
+.login>.signIn:hover{
+    color:var(--color-primary);
+}
+.button{
+    border:1px solid var(--color-primary);
+    border-radius:50px;
+    padding:13px 45px;
+    color:var(--color-primary);
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    line-height:19px;
+    transition:all 0.35s ease-in-out;
+}
+.button:hover{
+    background:var(--color-primary);
+    color:var(--color-page);
+}
 /* HEADER ============================================================================ */
 /* HEADER ============================================================================ */
 /* HEADER ============================================================================ */
