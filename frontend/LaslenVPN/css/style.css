@@ -156,27 +156,6 @@ strong{
     line-height:70px;
     color:var(--color-text);
 }
-.subTitle{
-    font-size:16px;
-    font-weight:400;
-    line-height:30px;
-    color:var(--color-text);
-}
-.presentation>.subTitle.-mb30{
-    margin-bottom:30px;
-}
-.counterContent>.title{
-    font-size:25px;
-    font-weight:700;
-    line-height:30px;
-    margin-bottom:5px;
-}
-.counterContent>.subTitle{
-    font-size:20px;
-    font-weight:400;
-    line-height:30px;
-    color:var(--color-disable);
-}
 .benefits .title{
     font-size:35px;
     font-weight:500;
@@ -193,6 +172,55 @@ strong{
     font-weight:500;
     line-height:50px;
 }
+.counterContent>.title{
+    font-size:25px;
+    font-weight:700;
+    line-height:30px;
+    margin-bottom:5px;
+}
+.title.-ntw{
+    font-size:35px;
+    font-weight:500;
+    line-height:50px;
+    width:380px;
+    margin:0 auto;
+}
+.customers>.title{
+    width:450px;
+    margin:auto;
+    font-size:35px;
+    font-weight:500;
+    line-height:50px;
+}
+.ctmrs>.name{
+    font-size:18px;
+    font-weight:500;
+    line-height:30px;
+    margin-bottom:5px;
+}
+.ctmrs>.location{
+    font-size:14px;
+    font-weight:400;
+    line-height:30px;
+}
+
+/* SUBTITLE */
+.subTitle{
+    font-size:16px;
+    font-weight:400;
+    line-height:30px;
+    color:var(--color-text);
+}
+.presentation>.subTitle.-mb30{
+    margin-bottom:30px;
+}
+.counterContent>.subTitle{
+    font-size:20px;
+    font-weight:400;
+    line-height:30px;
+    color:var(--color-disable);
+}
+
 .insideCards .subTitle{
     font-size:14;
     font-weight:400;
@@ -204,9 +232,26 @@ strong{
     font-size:25px;
     font-weight:500;
     line-height:30px;
+    margin-bottom:10px;
 }
 .month{
     color:var(--color-disable);
+}
+.subTitle.-ntws{
+    width:555px;
+    margin:20px auto 150px;
+}
+.customers>.subTitle{
+    width:555px;
+    margin:20px auto 60px;
+}
+
+/* OTHERS */
+.description{
+    margin-top:20px;
+    font-size:16px;
+    font-weight:400;
+    line-height:30px;
 }
 
 /* ====================================== */
@@ -309,7 +354,54 @@ span.mark{
 .insideCards>img{
     width:140px;
 }
+.insideCards.-color{
+    border:2px solid var(--color-primary);
+}
+.insideCards.-ctmrsw{
+    height:auto;
+    width:30%;
+    padding:30px;
+}
 
+/* ====================================== */
+/* WORLD ============================================================================================= */
+/* ====================================== */
+.boxNetwork{
+    text-align:center;
+}
+.boxNetwork>img{
+    width:1060px;
+}
+/* ====================================== */
+/* COMPANIES ========================================================================================== */
+/* ====================================== */
+.companies{
+    display:flex;
+    justify-content:space-around;
+    margin:35px 0;
+}
+
+/* ====================================== */
+/* CUSTOMERS ========================================================================================== */
+/* ====================================== */
+.customers{
+    text-align:center;
+}
+.customers img{
+    width:50px;
+    height:50px;
+}
+.ctmrCard{
+    display:flex;
+    flex-flow:row nowrap;
+}
+.ctmrCard>img{
+    margin-right:20px;
+}
+
+/* ====================================== */
+/* HEADER ============================================================================================= */
+/* ====================================== */
 /* ====================================== */
 /* HEADER ============================================================================================= */
 /* ====================================== */
