@@ -188,6 +188,17 @@ strong{
     line-height:30px;
     margin:30px 0;
 }
+.insideCards .title{
+    font-size:35px;
+    font-weight:500;
+    line-height:50px;
+}
+.insideCards .subTitle{
+    font-size:14;
+    font-weight:400;
+    line-height:30px;
+    color:var(--color-disable);
+}
 
 /* ====================================== */
 /* PRESENTATION ======================================================================================= */
@@ -271,6 +282,7 @@ span.mark{
     align-items:center;
     gap:50px;
     margin-bottom:150px;
+    margin-top:50px;
 }
 .insideCards{
     display:flex;
