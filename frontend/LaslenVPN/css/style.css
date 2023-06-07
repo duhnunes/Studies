@@ -199,6 +199,15 @@ strong{
     line-height:30px;
     color:var(--color-disable);
 }
+.-plan{
+    color:var(--color-text);
+    font-size:25px;
+    font-weight:500;
+    line-height:30px;
+}
+.month{
+    color:var(--color-disable);
+}
 
 /* ====================================== */
 /* PRESENTATION ======================================================================================= */
@@ -257,14 +266,15 @@ strong{
 span.mark{
     background-image:url(../img/checkmark.png);
     background-repeat:no-repeat;
-    width:24px;
     height:24px;
     padding-left:30px;
     padding-top:3px;
     display:block;
-    width:100%;
 }
-
+.insideCards .mark{
+    margin-left:0;
+    margin-right:auto;
+}
 
 /* ====================================== */
 /* PLANS ============================================================================================= */
