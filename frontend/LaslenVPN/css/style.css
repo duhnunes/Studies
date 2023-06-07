@@ -106,6 +106,10 @@ body{
     background:var(--color-primary);
     color:var(--color-page);
 }
+.button.-sub{
+    height:60px;
+    width:250px;
+}
 .button.-present{
     width:250px;
     height:60px;
@@ -253,6 +257,17 @@ strong{
     font-weight:400;
     line-height:30px;
 }
+.msg>.title{
+    font-size:35px;
+    font-weight:500;
+    line-height:45px;
+    margin-bottom:20px;
+}
+.msg>.subTitle{
+    font-size:16px;
+    font-weight:400;
+    line-height:30px;
+}
 
 /* ====================================== */
 /* PRESENTATION ======================================================================================= */
@@ -264,6 +279,12 @@ strong{
 }
 .imgPresentation>img{
     width:30em;
+}
+.msg{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
 }
 
 /* ====================================== */
@@ -400,8 +421,15 @@ span.mark{
 }
 
 /* ====================================== */
-/* HEADER ============================================================================================= */
+/* FOOTER ============================================================================================= */
 /* ====================================== */
+.boxBefFooter{
+    padding:58px 70px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+}
+
 /* ====================================== */
 /* HEADER ============================================================================================= */
 /* ====================================== */
