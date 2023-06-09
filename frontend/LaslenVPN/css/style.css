@@ -16,6 +16,17 @@
     margin:0;
     border:none;
 }
+h3{
+    font-weight:400;
+}
+a{
+    text-decoration:none;
+}
+html{
+    font-size:16px;
+    font-weight:400;
+    line-height:30px;
+}
 body{
     font-family:'Rubik', sans-serif;
     background:var(--color-page);
@@ -36,7 +47,6 @@ body{
     display:flex;
     align-items:center;
     gap:10px;
-    text-decoration:none;
     color:var(--color-text);
 }
 .imgLogo{
@@ -55,12 +65,10 @@ body{
 .menu {
     display:flex;
     gap:40px;
-    font-size:16px;
-    font-weight:400;
 }
 .menu>.menuItem{
-    text-decoration:none;
     color:var(--color-text);
+    line-height:19px;
     transition:color 0.25s ease-in-out;
 }
 .menu>.menuItem:hover{
@@ -76,9 +84,7 @@ body{
     gap:30px;
 }
 .login>.signIn{
-    text-decoration:none;
     color:var(--color-text);
-    font-size:16px;
     font-weight:600;
     line-height:19px;
     transition:color 0.25s ease-in-out;
@@ -95,8 +101,6 @@ body{
     border-radius:50px;
     padding:13px 45px;
     color:var(--color-primary);
-    text-decoration:none;
-    font-size:16px;
     font-weight:500;
     line-height:19px;
     transition:all 0.3s ease-in-out;
@@ -160,65 +164,39 @@ strong{
     line-height:70px;
     color:var(--color-text);
 }
-.benefits .title{
+.title.-tAlt{
     font-size:35px;
-    font-weight:500;
     line-height:50px;
 }
-.insideCards>.title{
+.title.-tAlt2{
     font-size:18px;
-    font-weight:500;
-    line-height:30px;
-    margin:30px 0;
-}
-.insideCards .title{
-    font-size:35px;
-    font-weight:500;
-    line-height:50px;
 }
 .counterContent>.title{
     font-size:25px;
     font-weight:700;
-    line-height:30px;
     margin-bottom:5px;
-}
-.title.-ntw{
-    font-size:35px;
-    font-weight:500;
-    line-height:50px;
-    width:380px;
-    margin:0 auto;
 }
 .customers>.title{
     width:450px;
     margin:auto;
-    font-size:35px;
-    font-weight:500;
-    line-height:50px;
+}
+.title.-ntw{
+    width:380px;
+    margin:0 auto;
 }
 .ctmrs>.name{
-    font-size:18px;
-    font-weight:500;
-    line-height:30px;
     margin-bottom:5px;
 }
 .ctmrs>.location{
     font-size:14px;
-    font-weight:400;
-    line-height:30px;
+    color:var(--color-disable);
 }
 .footerMenu>.title{
-    font-size:18px;
-    font-weight:500;
-    line-height:30px;
     margin-bottom:10px;
 }
+
 .footerMenu>.menuItem{
-    text-decoration:none;
     color:var(--color-disable);
-    font-size:16px;
-    font-weight:400;
-    line-height:30px;
     transition:color 0.2s ease;
 }
 .footerMenu>.menuItem:hover{
@@ -227,29 +205,21 @@ strong{
 
 /* SUBTITLE */
 .subTitle{
-    font-size:16px;
-    font-weight:400;
-    line-height:30px;
     color:var(--color-text);
 }
 .counterContent>.subTitle{
     font-size:20px;
-    font-weight:400;
-    line-height:30px;
     color:var(--color-disable);
 }
 
 .insideCards .subTitle{
     font-size:14;
-    font-weight:400;
-    line-height:30px;
     color:var(--color-disable);
 }
 .-plan{
     color:var(--color-text);
     font-size:25px;
     font-weight:500;
-    line-height:30px;
     margin-bottom:10px;
 }
 .month{
@@ -267,26 +237,14 @@ strong{
 /* OTHERS */
 .description{
     margin-top:20px;
-    font-size:16px;
-    font-weight:400;
-    line-height:30px;
 }
 .msg>.title{
-    font-size:35px;
-    font-weight:500;
     line-height:45px;
     margin-bottom:20px;
 }
-.msg>.subTitle{
-    font-size:16px;
-    font-weight:400;
-    line-height:30px;
-}
 .-copy{
     color:#AFB4C0;
-    font-size:16px;
     font-weight:500;
-    line-height:30px;
 }
 
 /* ====================================== */
