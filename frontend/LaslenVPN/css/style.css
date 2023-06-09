@@ -235,9 +235,6 @@ strong{
 }
 
 /* OTHERS */
-.description{
-    margin-top:20px;
-}
 .msg>.title{
     line-height:45px;
     margin-bottom:20px;
@@ -358,7 +355,7 @@ span.mark{
     border:2px solid var(--color-primary);
 }
 .insideCards.-ctmrsw{
-    height:auto;
+    height:230px;
     width:40%;
     padding:30px;
 }
