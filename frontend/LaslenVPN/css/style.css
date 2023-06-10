@@ -309,13 +309,11 @@ span.mark{
     background-image:url(../img/checkmark.png);
     background-repeat:no-repeat;
     height:24px;
+    width:100%;
     padding-left:30px;
     padding-top:3px;
-    display:block;
-}
-.insideCards .mark{
-    margin-left:0;
-    margin-right:auto;
+    text-align:left;
+    padding-left:45px;
 }
 
 /* ====================================== */
@@ -330,9 +328,8 @@ span.mark{
 /* ====================================== */
 .cards{
     display:flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
-    gap:50px;
     margin-bottom:150px;
     margin-top:50px;
 }
@@ -343,7 +340,7 @@ span.mark{
     border:2px solid #ddd;
     border-radius:10px;
     padding:80px 50px 50px;
-    width:30%;
+    width:20%;
     height:760px;
     text-align:center;
     position:relative;
@@ -358,6 +355,7 @@ span.mark{
     height:230px;
     width:40%;
     padding:30px;
+    margin:0 30px;
 }
 
 /* ====================================== */
