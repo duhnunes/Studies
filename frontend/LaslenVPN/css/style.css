@@ -310,10 +310,8 @@ span.mark{
     background-repeat:no-repeat;
     height:24px;
     width:100%;
-    padding-left:30px;
-    padding-top:3px;
     text-align:left;
-    padding-left:45px;
+    padding-left:40px;
 }
 
 /* ====================================== */
@@ -425,9 +423,6 @@ span.mark{
     align-items:center;
     margin-bottom:20px;
 }
-.footer>.subTitle{
-    margin-bottom:30px;
-}
 .footerMenu{
     display:flex;
     flex-direction:column;
@@ -476,6 +471,5 @@ span.mark{
 .-mb30{
     margin-bottom:30px;
 }
-.customers>.cards>.insideCards.-h{
-    height:auto;
-}
+
+
