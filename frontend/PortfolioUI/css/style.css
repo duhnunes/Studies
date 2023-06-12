@@ -1,0 +1,96 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Variável */
+:root{
+    --primary:#FF6464;
+    --secondary:#00A8CC;
+    --dark:#21243D;
+    --light:#8695A4;
+    --background:#EDF7FA;
+}
+
+/* Global Settings */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    vertical-align:baseline;
+    border:none;
+}
+body{
+    background:#Fff;
+    font-family:'Heebo', sans-serif;
+}
+
+
+/* BLOCKS ==================================================================== */
+.sections{
+    display:flex;
+    justify-content:center;
+    padding:0 25px;
+}
+.recentPost{
+    background:var(--background);
+}
+/* ====================================== */
+/* NAVIGATION ==================================================================== */
+/* ====================================== */
+.navbar{
+    text-align:center;
+    color:var(--dark);
+    height:3.125rem;
+    background:red;
+    visibility:hidden;
+}
+/* ====================================== */
+/* TEXTS ==================================================================== */
+/* ====================================== */
+.title{
+    font-size:2rem;
+    font-weight:700;
+    line-height:2.5rem;
+    text-align:center;
+    color:var(--dark);
+    margin: 2rem 0;
+}
+.subtitle{
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.46875rem;
+    text-align:center;
+}
+/* ====================================== */
+/* PRESENTATION ==================================================================== */
+/* ====================================== */
+.presentation{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    height:calc(100vh - 3.125rem);
+}
+.ellipse{
+    position:relative;
+    width:10.625rem;
+    height:10.625rem;
+}
+/* ====================================== */
+/* BUTTON ==================================================================== */
+/* ====================================== */
+.btn{
+    margin-top:27px;
+    margin-bottom:58px;
+    background:var(--primary);
+    padding: 9px 20px 17px;
+    border-radius:2px;
+    color:#fff;
+    font-size:1.25rem;
+    font-weight:500;
+    line-height:1.8125rem;
+}
+/* ====================================== */
+/* BLOCK ==================================================================== */
+/* ====================================== */
+
+/* ====================================== */
+/* BLOCK ==================================================================== */
+/* ====================================== */
