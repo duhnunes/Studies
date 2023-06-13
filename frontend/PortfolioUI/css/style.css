@@ -47,18 +47,30 @@ body{
     padding:0.9375rem 1rem;
     margin-bottom:2.0625rem;
 }
-.hamburguer{
+.hamburger{
     border-top:0.125rem solid var(--dark);
     width:1.875rem;
 }
-.hamburguer::before,
-.hamburguer::after{
+.hamburger::before,
+.hamburger::after{
     content:"";
     display:block;
     width:1.875rem;
     height:0.125rem;
     background:currentColor;
     margin-top:0.3125rem;
+}
+.menu{
+    display:none;
+    gap:30px;
+    list-style:none;
+}
+.navLink{
+    color:var(--dark);
+    text-decoration:none;
+    font-size:1.25rem;
+    font-weight:500;
+    line-height:1.8125rem;
 }
 /* ====================================== */
 /* TEXTS ==================================================================== */
@@ -116,6 +128,10 @@ body{
     position:relative;
     width:10.625rem;
     height:10.625rem;
+}
+.present_Content{
+    display:flex;
+    flex-wrap:wrap;
 }
 /* ====================================== */
 /* BUTTON ==================================================================== */
@@ -194,5 +210,17 @@ body{
     gap:35px;
 }
 /* ====================================== */
-/* COPY ==================================================================== */
+/* MEDIA SIZE ==================================================================== */
 /* ====================================== */
+@media(min-width:769px){
+    .hamburger{
+        display:none;
+    }
+    .menu{
+        display:flex;
+    }
+}
+
+/* ======================================================================== */
+/* WORKS PAGE ==================================================================== */
+/* ======================================================================== */
