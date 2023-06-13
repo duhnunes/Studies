@@ -25,8 +25,6 @@ body{
 
 /* BLOCKS ==================================================================== */
 .header{
-    display:flex;
-    justify-content:center;
     padding:0 25px;
 }
 .main{
@@ -64,6 +62,7 @@ body{
     display:none;
     gap:30px;
     list-style:none;
+    margin:0 3.75rem;
 }
 .navLink{
     color:var(--dark);
@@ -71,6 +70,10 @@ body{
     font-size:1.25rem;
     font-weight:500;
     line-height:1.8125rem;
+    transition:color 0.25s ease;
+}
+.navLink:hover{
+    color:var(--primary);
 }
 /* ====================================== */
 /* TEXTS ==================================================================== */
@@ -119,17 +122,17 @@ body{
 /* ====================================== */
 .presentation{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:34px;
+    flex-flow:column nowrap;
     height:calc(100vh - 3.125rem);
 }
+.avatar{
+    text-align:center;
+}
 .ellipse{
-    position:relative;
     width:10.625rem;
     height:10.625rem;
 }
-.present_Content{
+.present_content{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
@@ -141,12 +144,16 @@ body{
     margin-top:27px;
     margin-bottom:58px;
     background:var(--primary);
-    padding: 9px 20px 17px;
+    padding: 13px 20px;
     border-radius:2px;
     color:#fff;
     font-size:1.25rem;
     font-weight:500;
     line-height:1.8125rem;
+    transition:transform 0.25s ease-in;
+}
+.btn:hover{
+    transform:scale(1.03);
 }
 /* ====================================== */
 /* POSTS ==================================================================== */
@@ -214,11 +221,35 @@ body{
 /* MEDIA SIZE ==================================================================== */
 /* ====================================== */
 @media(min-width:769px){
+    .navbar{
+        margin:0;
+    }
     .hamburger{
         display:none;
     }
     .menu{
         display:flex;
+    }
+    .presentation{
+        flex-flow:row-reverse nowrap;
+        justify-content:space-around;
+        align-items:center;
+        gap:6.625rem;
+    }
+    .avatar{
+        margin-right:9.3125rem;
+    }
+    .present_content{
+        display:block;
+        margin-left:9.3125rem;
+        width:31.625rem;
+    }
+    .present_content>.title, .present_content>.subtitle{
+        text-align:left;
+    }
+    .title{
+        font-size:2.75rem;
+        line-height:3.75rem;
     }
 }
 
