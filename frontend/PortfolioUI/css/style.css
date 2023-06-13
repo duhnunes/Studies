@@ -132,6 +132,7 @@ body{
 .present_Content{
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
 }
 /* ====================================== */
 /* BUTTON ==================================================================== */
