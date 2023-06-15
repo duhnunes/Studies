@@ -176,7 +176,6 @@ body{
 /* ====================================== */
 /* POSTS ==================================================================== */
 /* ====================================== */
-
 .titlePage_rp{
     display:flex;
     flex-direction:row;
@@ -187,7 +186,6 @@ body{
 /* ====================================== */
 /* CARDS ==================================================================== */
 /* ====================================== */
-
 .card{
     background:#fff;
     box-shadow:0 4px 10px 0 rgba(187, 225, 250,0.25);
@@ -218,9 +216,6 @@ body{
     font-weight:900;
     line-height:1.5rem;
 }
-/* ====================================== */
-/* FOOTER ==================================================================== */
-/* ====================================== */
 
 /* ====================================== */
 /* SOCIAL ==================================================================== */
@@ -233,11 +228,8 @@ body{
 /* MEDIA SIZE ==================================================================== */
 /* ====================================== */
 @media(min-width:769px){
-    .header, .section{
-        padding:1.5625rem 10.875rem;
-    }
-    .navbar{
-        margin:0;
+    .header, .sections{
+        padding:1.5625rem 9.25rem;
     }
     .hamburger{
         display:none;
@@ -246,21 +238,26 @@ body{
         display:flex;
     }
     .presentation{
-        flex-flow:row-reverse nowrap;
+        flex-direction:row-reverse;
         justify-content:space-around;
         align-items:center;
         gap:6.625rem;
-    }
-    .avatar{
-        margin-right:9.3125rem;
+        padding:0;
+        width:100%;
     }
     .present_content{
-        display:block;
-        margin-left:9.3125rem;
+        display:flex;
+        padding:0;
         width:31.625rem;
+        align-items:flex-start;
+        gap:2.5rem;
     }
     .present_content>.title, .present_content>.subtitle{
         text-align:left;
+    }
+    .present_content>.title{
+        padding-right:3.75rem;
+        padding-left:0;
     }
     .title{
         font-size:2.75rem;
