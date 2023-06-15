@@ -23,7 +23,7 @@ body{
 }
 
 
-/* BLOCKS ==================================================================== */
+/* COMPONENTS ==================================================================== */
 .header{
     padding:0 25px;
 }
@@ -34,6 +34,13 @@ body{
 .section{
     padding:0 10px 26px;
 }
+.type{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:1.25rem;
+}
+
 /* ====================================== */
 /* NAVIGATION ==================================================================== */
 /* ====================================== */
@@ -110,7 +117,6 @@ body{
     margin:0 24px;
 }
 .subtitle.-desc{
-    margin-top:12px;
     text-align:left;
 }
 .subtitle.-copy{
@@ -202,7 +208,6 @@ body{
     padding:0 12px;
     background:#142850;
     color:#fff;
-    margin-right:22px;
     border-radius:16px;
 }
 /* ====================================== */
@@ -280,6 +285,25 @@ body{
     .card{
         max-width:420px;
     }
+    .-featured{
+        display:flex;
+        flex-direction:column;
+        padding:27px 148px;
+    }
+    .border{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:18px;
+    }
+    .border img{
+        max-width:15.375rem;
+    }
+    .borderContent{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
 }
 
 /* MEDIA TEXTS */
@@ -287,6 +311,9 @@ body{
     .title.-ct{
         font-size:1.625rem;
         line-height:2.386875rem;
+    }
+    .-featured h2{
+        text-align:left;
     }
 }
 
