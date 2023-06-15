@@ -65,7 +65,7 @@ body{
     border-bottom:1px solid var(--light);
     width:100%;
     color:var(--light);
-    margin-bottom:0.5rem;
+    margin-bottom:1rem;
 }
 .footer{
     gap:1.5625rem;
@@ -144,6 +144,8 @@ body{
 }
 .viewall{
     display:none;
+    text-decoration:none;
+    color:var(--secondary);
     transition:color .25s ease-in-out;
 }
 .viewall:hover{
@@ -181,6 +183,7 @@ body{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
+    width:100%;
 }
 
 /* ====================================== */
@@ -188,7 +191,7 @@ body{
 /* ====================================== */
 .card{
     background:#fff;
-    box-shadow:0 4px 10px 0 rgba(187, 225, 250,0.25);
+    box-shadow:0 4px 10px 0 rgba(187, 225, 250,0.8);
     border-radius:4px;
     padding:12px;
     gap:0.75rem;
@@ -224,6 +227,14 @@ body{
     display:flex;
     gap:2.1875rem;
 }
+.social a{
+    color:var(--dark);
+    font-size:1.875rem;
+    transition:color 0.3s ease;
+}
+.social a:hover{
+    color:var(--primary);
+}
 /* ====================================== */
 /* MEDIA SIZE ==================================================================== */
 /* ====================================== */
@@ -239,9 +250,8 @@ body{
     }
     .presentation{
         flex-direction:row-reverse;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items:center;
-        gap:6.625rem;
         padding:0;
         width:100%;
     }
@@ -263,41 +273,29 @@ body{
         font-size:2.75rem;
         line-height:3.75rem;
     }
+    .titlePage_rp{
+        max-width:1000px;
+    }
+    .-title_Section{
+        font-size:1.375rem;
+    }
     .viewall{
         display:block;
-        text-decoration:none;
-        color:var(--secondary);
     }
-    .-recentPost{
-        flex-flow:row wrap;
-    }
-    .titlePage_rp{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        width:100%;
-    }
-    .cards{
-        display:flex;
+    .cardBox{
         flex-direction:row;
-        gap:20px;
+        gap:1.25rem;
+        padding:0;
+        max-width:1000px;
     }
-    /* .card{
-        max-width:420px;
-    } */
-    .border{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        gap:18px;
+    .workBox{
+        flex-direction:row;
     }
-    .border img{
+    .workBox img{
         max-width:15.375rem;
     }
     .workContent{
-        display:flex;
-        flex-direction:column;
-        gap:15px;
+        gap:1rem;
     }
 }
 
@@ -306,6 +304,14 @@ body{
     .title.-ct{
         font-size:1.625rem;
         line-height:2.386875rem;
+        padding:0;
+    }
+    .type>.subtitle{
+        font-size:1.125rem;
+        line-height:1.6525rem;
+    }
+    .-tw{
+        font-size:1.875rem;
     }
 }
 
