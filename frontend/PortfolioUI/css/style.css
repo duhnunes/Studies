@@ -245,6 +245,9 @@ body{
     .menu{
         display:flex;
     }
+    .section{
+        padding:27px 148px;
+    }
     .presentation{
         flex-flow:row-reverse nowrap;
         justify-content:space-around;
@@ -273,7 +276,6 @@ body{
     }
     .-recentPost{
         flex-flow:row wrap;
-        padding:27px 148px;
     }
     .recentP_link{
         display:flex;
@@ -286,13 +288,12 @@ body{
         flex-direction:row;
         gap:20px;
     }
-    .card{
+    /* .card{
         max-width:420px;
-    }
+    } */
     .-featured{
         display:flex;
         flex-direction:column;
-        padding:27px 148px;
     }
     .border{
         display:flex;
