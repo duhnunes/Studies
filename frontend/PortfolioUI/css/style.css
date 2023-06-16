@@ -70,6 +70,9 @@ body{
     gap:1.5625rem;
     padding:3.125rem 0;
 }
+.activate{
+    border-bottom:2px solid var(--primary);
+}
 
 /* ====================================== */
 /* NAVIGATION ==================================================================== */
@@ -170,6 +173,7 @@ body{
     font-weight:500;
     line-height:1.8125rem;
     transition:transform 0.25s ease-in;
+    cursor:pointer;
 }
 .btn:hover{
     transform:scale(1.03);
@@ -314,23 +318,18 @@ body{
     }
 }
 
-
-/* BLOG PAGE ==================================================================== */
-
-/* ======================================================================== */
-/* TEXTS ==================================================================== */
-/* ======================================================================== */
-.-blogTitle{
+/* PAGES ==================================================================== */
+.-pageTitle{
     font-size:1.875rem;
     font-weight:700;
     align-self:flex-start;
 }
-.-blogCard{
+.-pageCard{
     background:transparent;
     box-shadow:none;
     padding:0;
 }
-.-blogSubTitle{
+.-pageSubTitle{
     padding:0;
     font-size:1.625rem;
     font-weight:500;
@@ -339,17 +338,19 @@ body{
 }
 
 @media(min-width:769px){
-    .-blogCardBox{
-        flex-direction:column;
-    }
-    .-blogMain{
+    .-pageMain{
         display:flex;
         justify-content:center;
     }
-    .-blogSection{
+    .-pageSection{
         max-width:1000px;
     }
+    .-pageCardBox{
+        flex-direction:column;
+    }
 }
+
+/* CONTACT PAGE ==================================================================== */
 
 /* ======================================================================== */
 /* RESETS ==================================================================== */
