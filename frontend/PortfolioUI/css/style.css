@@ -351,7 +351,25 @@ body{
 }
 
 /* CONTACT PAGE ==================================================================== */
-
+.contact{
+    align-items:inherit;
+    width:100%;
+    gap:0.25rem;
+}
+.-contactTitle{
+    text-transform:uppercase;
+    align-self:flex-start;
+}
+input[type=name], input[type=email], textarea{
+    border:1px solid var(--dark);
+    border-radius:5px;
+    padding:0.375rem;
+    width:100%;
+}
+textarea{
+    resize:none;
+    height:220px;
+}
 /* ======================================================================== */
 /* RESETS ==================================================================== */
 /* ======================================================================== */
@@ -360,4 +378,7 @@ body{
 }
 .-m0{
     margin:0;
+}
+.-mt5{
+    margin-top:0.5rem;
 }
