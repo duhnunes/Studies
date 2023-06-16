@@ -38,7 +38,6 @@ body{
 }
 .main{
     background:#fff;
-    display:block;
 }
 .navbar{
     display:flex;
@@ -339,9 +338,18 @@ body{
     text-align:left;
 }
 
-
-
-
+@media(min-width:769px){
+    .-blogCardBox{
+        flex-direction:column;
+    }
+    .-blogMain{
+        display:flex;
+        justify-content:center;
+    }
+    .-blogSection{
+        max-width:1000px;
+    }
+}
 
 /* ======================================================================== */
 /* RESETS ==================================================================== */
