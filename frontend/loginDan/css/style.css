@@ -1,0 +1,89 @@
+
+/* Variable */
+
+/* Global Settings */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border:none;
+}
+body{
+    background:#fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Local Settings */
+.wrapper{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border:1px solid rgb(198,198,198);
+    margin:10px;
+    padding:20px;
+    border-radius:5px;
+}
+
+.left{
+    text-align:center;
+    font-size:4rem;
+    line-height:3.675rem;
+}
+.right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+}
+.title{
+    font-size:2.675rem;
+    font-weight:700;
+    margin-bottom:30px;
+}
+.subTitle{
+    font-size:1.075rem;
+    color:#9d9d9d;
+    font-weight:500;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
+    width:100%;
+}
+input[type=email], input[type=password]{
+    border:1px solid #9d9d9d;
+    border-radius:5px;
+    padding:5px;
+    height:45px;
+}
+label{
+    text-align:center;
+    color:#9d9d9d;
+    font-size:1.0675rem;
+    font-weight:500;
+    margin-bottom:25px;
+}
+.btn{
+    padding:12px 10px;
+    align-self:center;
+    border-radius:5px;
+    background:#00d0ff;
+    font-size:1.275rem;
+    font-weight:700;
+}
+
+.repassword{
+    display:flex;
+    gap:5px;
+    align-items:center;
+}
+.link{
+    color:#000;
+    font-weight:700;
+}
+.createLogin{
+    margin-top:2.675rem;
+    color:#00d0ff;
+    font-weight:600;
+}
