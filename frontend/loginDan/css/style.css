@@ -80,7 +80,13 @@ label{
     border-radius:5px;
     background:#00d0ff;
     font-size:1.275rem;
-    font-weight:700;
+    text-decoration:none;
+    color:#fff;
+    cursor:pointer;
+    transition:transform 0.25s ease;
+}
+.btn:hover{
+    transform:scale(1.06);
 }
 
 .repassword{
