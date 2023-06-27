@@ -1,1 +1,1 @@
-Creating AluraFlix from ImersãoDev to MarcoBruno
+Creating AluraFlix from ImersãoDev with MarcoBruno to study JavaScript
