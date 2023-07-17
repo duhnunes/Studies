@@ -1,0 +1,61 @@
+
+/* Variables */
+:root {
+    --color-bg:#262626;
+    --color-text:#fff;
+}
+
+/* Global Settings */
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background:var(--color-bg);
+    color:var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18pt;
+}
+
+/* Site Settings */
+.wrapper{
+    display:flex;
+    justify-content:center;
+    margin: 50px;
+    padding:10px;
+}
+.body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow: column;
+}
+.form{
+    border:1px solid #464646;
+    border-radius:8px;
+    padding:10px;
+    margin-bottom:10px;
+    width:500px;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+input{
+    font:18pt normal Arial;
+    padding:6px;
+    font-weight:700;
+}
+.operador input{
+    background:#dedede;
+    border-radius:5px;
+    padding:4px;
+    margin:5px;
+    text-align:center;
+}
+.title{
+    font-weight:800;
+    text-transform:uppercase;
+}
