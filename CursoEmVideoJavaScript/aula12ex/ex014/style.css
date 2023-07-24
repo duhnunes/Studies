@@ -11,7 +11,7 @@ header{
 main{
     background:#fff;
     border-radius:10px;
-    padding:15px;
+    padding:1px 15px 15px;
     width:500px;
     margin:auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
@@ -20,6 +20,16 @@ main{
 section{
     text-align:center;
     padding:8px;
+    padding-top:0;
+}
+section #msg2{
+    text-transform:uppercase;
+}
+section img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    box-shadow: 5px 5px 10px #000;
 }
 
 footer{
