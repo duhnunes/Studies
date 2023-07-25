@@ -4,7 +4,7 @@ function verificar(){
     var fano = document.getElementById('txtano');
     var res = document.querySelector('section#res')
     if (fano.value.length == 0 || Number(fano.value) > ano){
-        alert('[ERROR] Verifique os dados e tente novamente!');
+        res.innerHTML = ('[ERROR] Verifique os dados e tente novamente!');
     } else {
         var fsex = document.getElementsByName('radsex');
         var idade = ano - Number(fano.value);
