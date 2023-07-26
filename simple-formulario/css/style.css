@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+:root{
+    --color-primary:#47a1eb;
+    --color-shadow: #47bceb;
+    --color-dgray: #262626;
+}
+
+/* Global Config */
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background:var(--color-dgray);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Block Config */
+.navbar {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--color-primary);
+    padding:10px;
+    box-shadow:0 3px 15px var(--color-shadow);
+}
+
+/*  */
+.wrapper{
+    height:calc(100vh - 115px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:15px;
+}
+.box{
+    background:#d9d9d9;
+    width:600px;
+    border-radius:10px;
+    padding:15px;
+    padding-top:0;
+    box-shadow:3px 3px 15px #ffffff6f;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.white{
+    color:#000;
+}
+.box-inside{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:10px;
+    margin:20px auto 10px;
+}
+
+.btn{
+    grid-column-start:1;
+    grid-column-end:3;
+    border-radius:6px;
+    padding:5px;
+    margin-top:10px;
+    text-transform:uppercase;
+    font-weight:700;
+    transition:all .3s ease-in-out;
+    cursor:pointer;
+}
+.btn:hover{
+    transition:all .3s ease-in-out;
+    transform:scale(1.02);
+}
+.btn:active{
+    transform:translate(-1px, -1px);
+}
+
+.footer{
+    background:var(--color-primary);
+    padding:10px;
+    text-align:center;
+    color:#fff;
+    text-transform:uppercase;
+    text-shadow:3px 3px 5px #000;
+}
+
+/* TEXTS ================================= */
+.title{
+    color:#fff;
+    text-transform:uppercase;
+    text-shadow:3px 3px 5px #000;
+}
+
+.minus{
+    font-size:0.8rem;
+    text-align:center;
+    color:#808080;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
