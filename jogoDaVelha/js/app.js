@@ -6,7 +6,7 @@ const playerX = "../img/X.jpg";
 const playerO = "../img/bolinha.jpg";
 
 const playerNames = {
-    [playerX]: "Player 1",
+    [playerX]: "Player",
     [playerO]: "Bot"
 }
 
