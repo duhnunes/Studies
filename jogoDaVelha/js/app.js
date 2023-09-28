@@ -22,11 +22,16 @@ const room = [
 ]
 
 document.addEventListener('click', (event) => {
-    if(event.target.matches('.icon')){
-        playGame(event.target.id, playerX);
-        setTimeout(() => bot(), 500);
+    if (event.target.matches('.icon')) {
+        const clickedCell = document.getElementById(event.target.id);
+        
+        if (!clickedCell.textContent) {
+            playGame(event.target.id, playerX);
+            setTimeout(() => bot(), 500);
+        }
     }
 });
+
 
 const bot = () => {
     if (!finish) {
@@ -43,12 +48,15 @@ const bot = () => {
 
 const playGame = (id, turn) => {
     const icon = document.getElementById(id);
-    // const turn = checkTurn ? playerX : playerO;
-    icon.src = turn;
-    icon.textContent = turn;
-    icon.classList.add(turn);
-    checkWinner(turn);
+    
+    if (!icon.textContent) {
+        icon.src = turn;
+        icon.textContent = turn;
+        icon.classList.add(turn);
+        checkWinner(turn);
+    }
 }
+
 
 const checkWinner = (turn) => {
     const winner = room.some((comb) => {
