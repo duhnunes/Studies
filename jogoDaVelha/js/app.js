@@ -1,5 +1,6 @@
 const cell = document.querySelectorAll('.icon');
-let checkTurn = true;
+// let checkTurn = true;
+let finish = false;
 
 const playerX = "../img/X.jpg";
 const playerO = "../img/bolinha.jpg";
@@ -22,13 +23,27 @@ const room = [
 
 document.addEventListener('click', (event) => {
     if(event.target.matches('.icon')){
-        playGame(event.target.id);
+        playGame(event.target.id, playerX);
+        setTimeout(() => bot(), 500);
     }
 });
 
-const playGame = (id) => {
+const bot = () => {
+    if (!finish) {
+        const emptyCells = Array.from(cell).filter((icon) => !icon.textContent);
+        if (emptyCells.length > 0) {
+            const randomIndex = Math.floor(Math.random() * emptyCells.length);
+            const selectedCell = emptyCells[randomIndex];
+            playGame(selectedCell.id, playerO);
+        }
+    }
+}
+
+
+
+const playGame = (id, turn) => {
     const icon = document.getElementById(id);
-    const turn = checkTurn ? playerX : playerO;
+    // const turn = checkTurn ? playerX : playerO;
     icon.src = turn;
     icon.textContent = turn;
     icon.classList.add(turn);
@@ -46,9 +61,10 @@ const checkWinner = (turn) => {
         finishGame(turn);
     }else if(checkDraw()){
         finishGame();
-    }else{
-        checkTurn = !checkTurn;
     }
+    // else{
+    //     checkTurn = !checkTurn;
+    // }
 }
 
 const checkDraw = () => {
@@ -96,6 +112,7 @@ const overlay = () => {
 }
 
 const finishGame = (winner = null) => {
+    finish = true;
     overlay();
     console.log("winner:", winner);
     if(winner){
