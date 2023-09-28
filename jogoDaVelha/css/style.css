@@ -153,3 +153,67 @@ body{
     font-size:3rem;
     font-weight:600;
 }
+
+@media(max-width:500px){
+    .jogoArea{
+        width:400px;
+        height:400px;
+    }
+    .gridGame::before{
+        top:120px;
+    }
+    .gridGame::after{
+        bottom:130px;
+    }
+    .gridGameV::before{
+        top:190px;
+        left:-70px;
+    }
+    .gridGameV::after{
+        bottom:190px;
+        right:-70px;
+    }
+    .icon{
+        width:90px;
+        height:90px;
+    }
+
+    .overh2{
+        font-size:2rem;
+    }
+    .btnsArea{
+        width:400px;
+    }
+}
+
+@media(max-width:400px){
+    .jogoArea{
+        width:300px;
+        height:300px;
+    }
+    .gridGame::before{
+        top:95px;
+    }
+    .gridGame::after{
+        bottom:95px;
+    }
+    .gridGameV::before{
+        top:140px;
+        left:-50px;
+    }
+    .gridGameV::after{
+        bottom:140px;
+        right:-50px;
+    }
+    .icon{
+        width:70px;
+        height:70px;
+    }
+
+    .overh2{
+        font-size:2rem;
+    }
+    .btnsArea{
+        width:300px;
+    }
+}
