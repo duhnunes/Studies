@@ -67,14 +67,25 @@ body{
     padding:0 15px;
 }
 .card{
+    /* ADVANCED METHOD */
+    --_shadow:var(--shadow, pink);
+    --_icon:var(--icon, red);
+    --_button-hover:var(--button-hover, var(--clr-text));
+    --_text:var(--text, var(--clr-white));
+    
+    
     background-color:var(--clr-white);
     border-radius:15px;
     padding:30px;
     position:relative;
     margin:15px;
+    box-shadow:0 0 1rem rgba(0 0 0 / .122);
 }
 .card--icon{
     font-size:var(--fs-700);
+
+    /* ADVANCED METHOD */
+    color:var(--_icon);
 }
 .card--plan{
     font-size:var(--fs-500);
@@ -110,9 +121,14 @@ body{
     text-transform:uppercase;
     font-weight:var(--fw-black);
 }
-.card--button:hover{
+.card .card--button:hover,
+.card .card--button:focus{
+    background-color:var(--_button-hover);
     box-shadow:none;
     translate:0 .15rem;
+
+    /* ADVANCED METHOD */
+    color:var(--_text);
 }
 .card::before{
     content:'';
@@ -121,12 +137,31 @@ body{
     inset:0;
     translate:-1.25rem -1.25rem;
     border-radius:inherit;
+
+    /* ADVANCED METHOD */
+    background-color:var(--_shadow);
 }
 
-
+/* ADVANCED METHOD */
+.card--pram{
+    --shadow:var(--clr-yellow-300);
+    --icon:var(--clr-yellow-400);
+    --button-hover:var(--clr-yellow-400);
+    --text:var(--clr-text);
+}
+.card--bike{
+    --shadow:var(--clr-purple-300);
+    --icon:var(--clr-purple-400);
+    --button-hover:var(--clr-purple-400);
+}
+.card--rocket{
+    --shadow:var(--clr-cyan-300);
+    --icon:var(--clr-cyan-400);
+    --button-hover:var(--clr-cyan-400);
+}
 
 /* NOOB METHOD */
-.card--pram::before{
+/* .card--pram::before{
     background-color:var(--clr-yellow-300);
 }
 .card--bike::before{
@@ -143,5 +178,5 @@ body{
 }
 .card--rocket .card--icon{
     color:var(--clr-cyan-400);
-}
+} */
 
