@@ -1,0 +1,147 @@
+:root{
+    /* colors */
+    --clr-white:hsl(220, 37%, 100%);
+    --clr-surface:hsl(220, 37%, 97%);
+    --clr-text:hsl(244, 44%, 14%);
+
+    --clr-yellow-400:hsl(42, 99%, 69%);
+    --clr-yellow-300:hsl(47, 100%, 90%);
+    --clr-purple-400:hsl(280, 96%, 45%);
+    --clr-purple-300:hsl(282, 89%, 90%);
+    --clr-cyan-400:hsl(198, 99%, 49%);
+    --clr-cyan-300:hsl(240, 100%, 90%);
+
+    /* font families */
+    --ff-base:"IBM Plex Sans", sans-serif;
+    --ff-accent: "Young Serif", serif;
+
+    /* font weights */
+    --fw-regular:500;
+    --fw-bold:600;
+    --fw-black:700;
+
+    /* font sizes */
+    --fs-300:1rem;
+    --fs-400:1.125rem;
+    --fs-500:1.375rem;
+    --fs-600:1.75rem;
+    --fs-700:2.25rem;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-size:16px;
+    font-family:var(--ff-base);
+    background-color:var(--clr-surface);
+    color:var(--clr-text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    min-height:100svh;
+}
+.header{
+    margin-bottom:50px;
+    max-width:600px;
+    text-align:center;
+}
+.header h1{
+    font-size:var(--fs-700);
+    font-weight:var(--fw-black);
+}
+.header p{
+    font-size:var(--fs-400);
+    font-weight:var(--fw-regular);
+}
+
+.container-card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1rem;
+    padding:0 15px;
+}
+.card{
+    background-color:var(--clr-white);
+    border-radius:15px;
+    padding:30px;
+    position:relative;
+    margin:15px;
+}
+.card--icon{
+    font-size:var(--fs-700);
+}
+.card--plan{
+    font-size:var(--fs-500);
+    font-weight:var(--fw-bold);
+    text-align:left;
+    margin-top:15px;
+}
+.card--reward{
+    font-size:.8125rem;
+    font-weight:var(--fw-regular);
+    color:#6e6d6dad;
+}
+.card--payment{
+    margin:20px 0 50px;
+}
+.card--price{
+    font-size:var(--fs-500);
+    font-weight:var(--fw-black);
+}
+.card--month{
+    color:#6e6d6dad;
+    font-weight:var(--fw-regular);
+    margin-left:5px;
+}
+.card--button{
+    width:100%;
+    border:none;
+    border-radius:50px;
+    padding:12px 15px;
+    background-color:var(--clr-surface);
+    cursor:pointer;
+    box-shadow:0 5px 3px 0 rgb(222, 224, 230);
+    text-transform:uppercase;
+    font-weight:var(--fw-black);
+}
+.card--button:hover{
+    box-shadow:none;
+    translate:0 .15rem;
+}
+.card::before{
+    content:'';
+    position:absolute;
+    z-index:-1;
+    inset:0;
+    translate:-1.25rem -1.25rem;
+    border-radius:inherit;
+}
+
+
+
+/* NOOB METHOD */
+.card--pram::before{
+    background-color:var(--clr-yellow-300);
+}
+.card--bike::before{
+    background-color:var(--clr-purple-300);
+}
+.card--rocket::before{
+    background-color:var(--clr-cyan-300);
+}
+.card--pram .card--icon{
+    color:var(--clr-yellow-400);
+}
+.card--bike .card--icon{
+    color:var(--clr-purple-400);
+}
+.card--rocket .card--icon{
+    color:var(--clr-cyan-400);
+}
+
